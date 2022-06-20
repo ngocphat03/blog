@@ -24,43 +24,42 @@ body{
     text-transform: uppercase;
 }
 .header__navbar__menu--list{
-    display: flex;
-    align-items: center;
-    list-style-type: none;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
 }
 .header__navbar__menu--list a{
-    padding: 0px 7px;
-    text-decoration: none;
+  padding: 0px 7px;
+  text-decoration: none;
 }
 .header__navbar__menu--list li{
-    padding: 0px 7px;
-
+  margin: 0px 0px;
 }
 .header__navbar__menu ul li ul li {
-    background: #AFEEEE;
-    display: block;
+  background: #AFEEEE;
+  display: block;
 }
 .header__navbar__menu ul li ul li a {
-    display: block;
-    padding: 10px 0px;
+  display: block;
+  padding: 10px 10px 10px 7px;
 }
 .header__navbar__menu ul li:hover ul {
-    display: block;
+  display: block;
 }
 .header__navbar__menu ul li ul {
-    position: absolute;
-    display: none;
+  position: absolute;
+  display: none;
 }
 .header__navbar__menu ul li:hover{
-    background: #AFEEEE;
+  background: #AFEEEE; 
 }
 .contener{
-    background-color: #00FFFF;
+    background-color: rgb(240, 242, 245);
     width: 100%;
     height: 580px;
 }
 .contener__login-box{
-    background-color: #E0FFFF;
+    background-color: rgba(175, 238, 238, 0.6);
     top: 90px;
     width: 600px;
     height: 400px;
@@ -128,3 +127,4 @@ input[type=text], input[type=password] {
   .contener__login-box__conten a{
     padding-left: 230px;
   }
+  
