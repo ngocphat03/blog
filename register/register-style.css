@@ -9,19 +9,24 @@ body{
     font-family:sans-serif;
 }
 #header{
-    width: 100%;
-    height: 70px;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  background-color: #111111;
+  z-index: 100;
 }
 .header__navbar{
-    width: 90%;
-    height: 50px;
-    justify-content: space-between;
-    display: flex;
-    position: relative;
-    align-items: center;
-    margin: auto;
-    top: 10px;
-    text-transform: uppercase;
+  margin: auto;
+  padding: 0% 5%;
+  width: 90%;
+  height: 50px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 6px 2px lightblue;
+  font-weight: bold;
 }
 .header__navbar__menu--list{
   display: flex;
@@ -31,35 +36,49 @@ body{
 .header__navbar__menu--list a{
   padding: 0px 7px;
   text-decoration: none;
+  position: relative;
+  color: white;
 }
 .header__navbar__menu--list li{
   margin: 0px 0px;
+  padding: 16px  0px;
+}
+.header__navbar__menu ul li:hover{
+  background: green;
+  color: black;
+  transition: .5s;
+  /* border-bottom: 2px solid red; */
+}
+.header__navbar__menu ul li:hover ul {
+  display: block;
+  border-bottom: 10px black;
+  transition: .5s;
+}
+.header__navbar__menu ul li ul {
+  position: absolute;
+  display: none;
+  top: 50px;
 }
 .header__navbar__menu ul li ul li {
-  background: #AFEEEE;
+  background: black;
   display: block;
+  padding: 5px;
+}
+.header__navbar__menu ul li ul li:hover{
+  background: green;
+  color: black;
 }
 .header__navbar__menu ul li ul li a {
   display: block;
   padding: 10px 10px 10px 7px;
 }
-.header__navbar__menu ul li:hover ul {
-  display: block;
-}
-.header__navbar__menu ul li ul {
-  position: absolute;
-  display: none;
-}
-.header__navbar__menu ul li:hover{
-  background: #AFEEEE; 
-}
 .contener{
-    background-color: rgb(240, 242, 245);
+    /* background-color: rgb(240, 242, 245);
     width: 100%;
-    height: 580px;
+    height: 580px; */
 }
 .contener__login-box{
-    background-color: rgba(175, 238, 238, 0.6);
+    background-color: rgb(175, 238, 238);
     top: 90px;
     width: 600px;
     height: 400px;
@@ -128,3 +147,156 @@ input[type=text], input[type=password] {
     padding-left: 230px;
   }
   
+#navbar-mobile{
+  display: none;
+}
+/* Mobile */
+@media only screen and (max-width: 720px) {
+/* hidder header and footer */
+  #navbar-desktop{
+      display: none;
+  }
+  #footer-desktop{
+  }
+  .list{
+      text-align: center;
+  }
+  .list li{
+      display: block;
+      text-align: center;
+      width: 150px;
+      padding: 4px;
+      display: inline;
+  }
+  .list li a {
+      font-size: 10px;
+  }
+  .footer__list{
+      width: auto;
+      padding: 0px;
+  }
+  .footer__introduce{
+      display: none;
+  }
+  .footer__copyright{
+      font-size: 10px;
+  }
+  .footer__list a{
+      font-size: 16px;
+  }
+  #navbar-mobile{
+      display: block;
+  }
+/* style header mobile (template) */
+  .top-nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background: black;
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color: #FFF;
+      height: 70px;
+      padding: 0px 20px;
+  }
+  .menu {
+  }
+  .menu > li {
+      margin: 0 1rem;
+      overflow: hidden;
+  }
+  .menu-button-container {
+      display: none;
+      height: 100%;
+      width: 30px;
+      cursor: pointer;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  #menu-toggle {
+      display: none;
+    }
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+      display: block;
+      background-color: #fff;
+      position: absolute;
+      height: 4px;
+      width: 30px;
+      transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      border-radius: 2px;
+  }
+  .menu-button::before {
+      content: '';
+      margin-top: -8px;
+  }
+  .menu-button::after {
+      content: '';
+      margin-top: 8px;
+  }
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+      margin-top: 0px;
+      transform: rotate(405deg);
+  }
+  #menu-toggle:checked + .menu-button-container .menu-button {
+      background: rgba(255, 255, 255, 0);
+  }
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+      margin-top: 0px;
+      transform: rotate(-405deg);
+  }
+  .menu-button-container {
+      display: flex;
+  }
+  .menu {
+      list-style-type: none;
+      margin: 0;
+      margin-top: 50px;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      top: 20px;
+      left: 0;
+      position: absolute;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: black;
+      top: 10px;
+  }
+  .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+  }
+  .menu li a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin: auto;
+  }
+  .menu li:hover{
+      background: green;
+  }
+}
