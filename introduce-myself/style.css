@@ -104,8 +104,6 @@ p {
     line-height: 26px;
 }
 #picture{
-    width: 750px;
-    margin-top: 15px;
 }
 /* table {
     display: table;
@@ -160,6 +158,39 @@ p {
     width: 15px;
     height: 15px;
 }
+.img{
+    width: 100%;
+    height: 400px;
+}
+.img img{
+    height: 50%;
+    width: 100%;
+}
+.style-picture-left {
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+.style-picture-left img{
+    margin: 10px;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+}
+
+
+}
+.style-picture-left__top {
+    height: 50%;
+}
+.style-picture-right{
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+.style-picture-right img{
+    margin-top: 100px;
+}
+
 .video{
     width: 750px;
     height: 422px;
