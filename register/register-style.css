@@ -13,7 +13,7 @@ body{
   height: 50px;
   position: fixed;
   background-color: #111111;
-  z-index: 100;
+  z-index: 1000;
 }
 .header__navbar{
   margin: auto;
@@ -78,21 +78,33 @@ body{
     height: 580px; */
 }
 .contener__login-box{
-    background-color: rgb(175, 238, 238);
+    background-color: white);
     top: 90px;
     width: 600px;
-    height: 400px;
+    height: 500px;
     margin: auto;
     position: relative;
     border-radius: 50px;
+    z-index: 100;box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
 }
 .contener__login-box__conten{
     width: 500px;
     height: 300px;
     padding: 40px 50px 50px;
     margin: auto;
+    font-size: 16px;
 }
 
+.contener__login-box__conten button{
+  margin-top: 30px;
+}
+.input-introduce {
+  border-radius: 8px;
+  height: 60px;
+  margin: 2px;
+  font-size: medium;
+}
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -103,7 +115,7 @@ input[type=text], input[type=password] {
   }
   
   button {
-    background-color: #04AA6D;
+    background-color: green;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -155,6 +167,24 @@ input[type=text], input[type=password] {
 /* hidder header and footer */
   #navbar-desktop{
       display: none;
+  }
+  .contener__login-box{
+    background-color: white;
+      top: 100px;
+      width: 300px;
+      height: 100%;
+      margin: auto;
+      padding: 0px;
+      position: relative;
+      border-radius: 20px;
+      z-index: 100;
+  }
+  .contener__login-box__conten{
+      width: 500px;
+      height: 500px;
+      padding: 20px;
+      margin: 10px;
+      z-index: 0;
   }
   #footer-desktop{
   }
@@ -298,5 +328,24 @@ input[type=text], input[type=password] {
   }
   .menu li:hover{
       background: green;
+  }
+  .contener__login-box{
+    background-color: white;
+      top: 100px;
+      width: 90%;
+      height: 100%;
+      margin: auto;
+      position: relative;
+      border-radius: 20px;
+      z-index: 100;
+  }
+  .contener__login-box__conten{
+      width: 500px;
+      height: 450px;
+      padding: 50px 20px 20px 20px;
+      margin: auto;
+  }
+  .contener__login-box__conten button{
+    margin-top: 30px;
   }
 }

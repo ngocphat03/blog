@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="register-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/205daebc46.js" crossorigin="anonymous"></script>
     <title>Đăng nhập</title>
 </head>
 <body>
@@ -13,7 +15,7 @@
                     <img width="50px" height="50px"  src="../img/logo--axit--white-red.png" alt="logo">
                 </div>
                 <nav class="header__navbar__menu">
-                    <ul class="header__navbar__menu--list">
+                    <ul class="header__navbar__menu--list" style="!important">
                         <li><a class="home" href="../home/home.html">Trang chủ</a></li>
                         <li><a href="">Diễn đàn</a>
                             <ul>
@@ -65,13 +67,13 @@
         <div class="contener__login-box">
             <div class="contener__login-box__conten">
                 <h1>Đăng kí</h1>
-                <label for="username"><b>Tên đăng nhập</label>
-                <input type="text" placeholder="Tên đăng nhập"
+                <label class="input-introduce" for="username"><b>Tên đăng nhập</label>
+                <input class="input-introduce" type="text" placeholder="Tên đăng nhập"
                 <label for="password"><b>Mật khẩu</b></label>
-                <input type="password" placeholder="Mật khẩu" name="psw" required>  
-                <label for="password"><b>Nhập lại mật khẩu</b></label>
-                <input type="password" placeholder="Nhập lại mật khẩu" name="psw" required>           
-                <button type="submit">Đăng kí</button>
+                <input class="input-introduce" type="password" placeholder="Mật khẩu" name="psw" required>  
+                <label class="input-introduce" for="password"><b>Nhập lại mật khẩu</b></label>
+                <input class="input-introduce" type="password" placeholder="Nhập lại mật khẩu" name="psw" required>           
+                <button class="input-introduce" type="submit">Đăng kí</button>
             </div>
             
         </div>
