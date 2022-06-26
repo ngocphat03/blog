@@ -163,189 +163,187 @@ input[type=text], input[type=password] {
   display: none;
 }
 /* Mobile */
+/* Mobile */
 @media only screen and (max-width: 720px) {
-/* hidder header and footer */
-  #navbar-desktop{
-      display: none;
+  /* hidder header and footer */
+      #navbar-desktop{
+          display: none;
+      }
+      .container{
+        width: 100%;
+      }
+      .contener__login-box{
+        background-color: white;
+          top: 100px;
+          width: 100%;
+          height: 100%;
+          margin: auto;
+          padding: 0px;
+          position: relative;
+          border-radius: 20px;
+          z-index: 100;
+      }
+      .contener__login-box__conten{
+          width: auto;
+          height: auto;
+          padding: 20px;
+          margin: 10px;
+          z-index: 0;
+      }
+      .contener__login-box__conten a{
+        padding-left: 0px;
+        position: absolute;
+        right: 30px;
+      }
+      input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: flex;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      
+  
+      .list{
+          text-align: center;
+      }
+      .list li{
+          display: block;
+          text-align: center;
+          width: 150px;
+          padding: 4px;
+          display: inline;
+      }
+      .list li a {
+          font-size: 10px;
+      }
+      .footer__list{
+          width: auto;
+          padding: 0px;
+      }
+      .footer__introduce{
+          display: none;
+      }
+      .footer__copyright{
+          font-size: 10px;
+      }
+      .footer__list a{
+          font-size: 16px;
+      }
+      #navbar-mobile{
+          display: block;
+      }
+   /* style header mobile (template) */
+      .top-nav {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          background: black;
+          /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          color: #FFF;
+          height: 70px;
+          padding: 0px 20px;
+      }
+      .menu {
+      }
+      .menu > li {
+          margin: 0 1rem;
+          overflow: hidden;
+      }
+      .menu-button-container {
+          display: none;
+          height: 100%;
+          width: 30px;
+          cursor: pointer;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+      #menu-toggle {
+          display: none;
+        }
+      .menu-button,
+      .menu-button::before,
+      .menu-button::after {
+          display: block;
+          background-color: #fff;
+          position: absolute;
+          height: 4px;
+          width: 30px;
+          transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+          border-radius: 2px;
+      }
+      .menu-button::before {
+          content: '';
+          margin-top: -8px;
+      }
+      .menu-button::after {
+          content: '';
+          margin-top: 8px;
+      }
+      #menu-toggle:checked + .menu-button-container .menu-button::before {
+          margin-top: 0px;
+          transform: rotate(405deg);
+      }
+      #menu-toggle:checked + .menu-button-container .menu-button {
+          background: rgba(255, 255, 255, 0);
+      }
+      #menu-toggle:checked + .menu-button-container .menu-button::after {
+          margin-top: 0px;
+          transform: rotate(-405deg);
+      }
+      .menu-button-container {
+          display: flex;
+      }
+      .menu {
+          list-style-type: none;
+          margin: 0;
+          margin-top: 50px;
+          padding: 0;
+          width: 100%;
+          display: flex;
+          top: 20px;
+          left: 0;
+          position: absolute;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+      #menu-toggle ~ .menu li {
+          height: 0;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      #menu-toggle:checked ~ .menu li {
+          border: 1px solid #333;
+          height: 2.5em;
+          padding: 0.5em;
+          transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      .menu > li {
+          display: flex;
+          justify-content: center;
+          margin: 0;
+          padding: 0.5em 0;
+          width: 100%;
+          color: white;
+          background-color: black;
+          top: 10px;
+      }
+      .menu > li:not(:last-child) {
+          border-bottom: 1px solid #444;
+      }
+      .menu li a {
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+          margin: auto;
+      }
+      .menu li:hover{
+          background: green;
+      }
   }
-  .contener__login-box{
-    background-color: white;
-      top: 100px;
-      width: 300px;
-      height: 100%;
-      margin: auto;
-      padding: 0px;
-      position: relative;
-      border-radius: 20px;
-      z-index: 100;
-  }
-  .contener__login-box__conten{
-      width: 500px;
-      height: 500px;
-      padding: 20px;
-      margin: 10px;
-      z-index: 0;
-  }
-  #footer-desktop{
-  }
-  .list{
-      text-align: center;
-  }
-  .list li{
-      display: block;
-      text-align: center;
-      width: 150px;
-      padding: 4px;
-      display: inline;
-  }
-  .list li a {
-      font-size: 10px;
-  }
-  .footer__list{
-      width: auto;
-      padding: 0px;
-  }
-  .footer__introduce{
-      display: none;
-  }
-  .footer__copyright{
-      font-size: 10px;
-  }
-  .footer__list a{
-      font-size: 16px;
-  }
-  #navbar-mobile{
-      display: block;
-  }
-/* style header mobile (template) */
-  .top-nav {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      background: black;
-      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      color: #FFF;
-      height: 70px;
-      padding: 0px 20px;
-  }
-  .menu {
-  }
-  .menu > li {
-      margin: 0 1rem;
-      overflow: hidden;
-  }
-  .menu-button-container {
-      display: none;
-      height: 100%;
-      width: 30px;
-      cursor: pointer;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
-  #menu-toggle {
-      display: none;
-    }
-  .menu-button,
-  .menu-button::before,
-  .menu-button::after {
-      display: block;
-      background-color: #fff;
-      position: absolute;
-      height: 4px;
-      width: 30px;
-      transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-      border-radius: 2px;
-  }
-  .menu-button::before {
-      content: '';
-      margin-top: -8px;
-  }
-  .menu-button::after {
-      content: '';
-      margin-top: 8px;
-  }
-  #menu-toggle:checked + .menu-button-container .menu-button::before {
-      margin-top: 0px;
-      transform: rotate(405deg);
-  }
-  #menu-toggle:checked + .menu-button-container .menu-button {
-      background: rgba(255, 255, 255, 0);
-  }
-  #menu-toggle:checked + .menu-button-container .menu-button::after {
-      margin-top: 0px;
-      transform: rotate(-405deg);
-  }
-  .menu-button-container {
-      display: flex;
-  }
-  .menu {
-      list-style-type: none;
-      margin: 0;
-      margin-top: 50px;
-      padding: 0;
-      width: 100%;
-      display: flex;
-      top: 20px;
-      left: 0;
-      position: absolute;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
-  #menu-toggle ~ .menu li {
-      height: 0;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu-toggle:checked ~ .menu li {
-      border: 1px solid #333;
-      height: 2.5em;
-      padding: 0.5em;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .menu > li {
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0.5em 0;
-      width: 100%;
-      color: white;
-      background-color: black;
-      top: 10px;
-  }
-  .menu > li:not(:last-child) {
-      border-bottom: 1px solid #444;
-  }
-  .menu li a {
-      color: white;
-      text-decoration: none;
-      text-transform: uppercase;
-      margin: auto;
-  }
-  .menu li:hover{
-      background: green;
-  }
-  .contener__login-box{
-    background-color: white;
-      top: 100px;
-      width: 90%;
-      height: 100%;
-      margin: auto;
-      position: relative;
-      border-radius: 20px;
-      z-index: 100;
-  }
-  .contener__login-box__conten{
-      width: 500px;
-      height: 450px;
-      padding: 50px 20px 20px 20px;
-      margin: auto;
-  }
-  .contener__login-box__conten button{
-    margin-top: 30px;
-  }
-}
