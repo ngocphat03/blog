@@ -32,6 +32,14 @@ body{
     align-items: center;
     list-style-type: none;
 }
+.danh-sach{
+    width: 450px;
+    height: auto;
+  }
+  .nguoi-dung{
+    width: 250px;
+    height: auto;
+  }
 .header__navbar__menu--list a{
     padding: 0px 7px;
     text-decoration: none;
@@ -39,6 +47,7 @@ body{
     color: white;
 }
 .header__navbar__menu--list li{
+    width: -webkit-fill-available;
     margin: 0px 0px;
     padding: 16px  0px;
 }
