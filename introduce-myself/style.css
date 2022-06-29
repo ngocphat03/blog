@@ -324,6 +324,18 @@ p {
 #navbar-mobile{
     display: none;
 }
+.back-to-top_button{
+    width: 40px;
+    height: 40px;
+    background-color:#4FC3A1;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    z-index: 1000;
+}
 /* Mobile */
 @media only screen and (max-width: 810px) {
 /* hidder header and footer */
