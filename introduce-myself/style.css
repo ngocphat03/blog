@@ -11,7 +11,7 @@ body{
 #header{
     width: 100%;
     height: 50px;
-    position: fixed;
+    position: absolute;
     background-color: #111111;
     z-index: 1000;
 }
@@ -51,6 +51,7 @@ body{
     width: -webkit-fill-available;
     margin: 0px 0px;
     padding: 16px  0px;
+    text-align: center;
 }
 .header__navbar__menu ul li:hover{
     background: green;
@@ -82,7 +83,7 @@ body{
     padding: 10px 10px 10px 7px;
 }
 #content{
-    width: 980px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
@@ -94,7 +95,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #content-detail{
-    width: 750px;
+    width: 80%;
     margin: auto;
     font-size: 16px;
 }
@@ -117,6 +118,7 @@ p {
     list-style: none;
 }
 #picture{
+    width: 100%;
 }
 /* table {
     display: table;
@@ -205,7 +207,7 @@ p {
 }
 
 .video{
-    width: 750px;
+    width: 100%;
     height: 422px;
 }
 .center,.nav__content{
@@ -337,19 +339,28 @@ p {
     z-index: 1000;
 }
 /* Mobile */
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 720px) {
 /* hidder header and footer */
     #navbar-desktop{
         display: none;
     }
     #footer-desktop{
     }
-    #content-detail{
+    #picture{
         width: 100%;
+    }
+    .fl-table{
+        display: none;
+    }
+    #content{
+        width: auto;
+    }
+    #content-detail{
+        width: 90%;
 
     }
-    .img{
-
+    .video{
+        width: 100%;
     }
     .style-picture-left{
         width: 100%;
