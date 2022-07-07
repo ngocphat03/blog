@@ -313,7 +313,10 @@ p {
 }
 .footer__copyright{
     text-align: center;
-    margin: 10px 0px;
+    margin: 10px 0px 0px;
+}
+.footer__copyright p{
+    margin: 0px;
 }
 .list li{
     display: inline;
@@ -369,6 +372,7 @@ p {
     }
     #picture{
         width: 100%;
+        height: auto;
         margin: 10px 0px;
     } /*
     .fl-table{
