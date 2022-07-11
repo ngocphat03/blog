@@ -18,7 +18,7 @@
     /* background-color: aliceblue; */
 }
 .output__display{
-    width: 100%;
+    width: 220px;
     height: 75px;
     color: white;
     /* background-color:#343434 ; */
@@ -64,26 +64,6 @@
 .orther:hover{
     background-color: #D9D9D9;
 }
-
-
-
-
-
-
-/* #result{
-	height: 120px;
+p{
+    overflow: hidden ;
 }
-#history{
-	text-align: right;
-	height: 20px;
-	margin: 0 20px;
-	padding-top: 20px;
-	font-size: 15px;
-	color: #919191;
-}
-#output{
-	text-align: right;
-	height: 60px;
-	margin: 10px 20px;
-	font-size: 30px;
-} */

@@ -14,21 +14,13 @@
     <div class="contener">
         <div class="output">
             <div class="output__display">
-                <p id="text2"></p>
+                <p id="out">0</p>
             </div>
         </div>
-        <!-- <div id="result">
-            <div id="history">
-                <p id="history-value"></p>
-            </div>
-            <div id="output">
-                <p id="output-value"></p>
-            </div>
-        </div> -->
         <div class="input">
             <button onclick="cl()" class="button orther">AC</button>
-            <button onclick="cal('/')" class="button orther">+/-</button>
-            <button onclick="cal('*0.01')" class="button orther">%</button>
+            <button onclick="negative('* -1')" class="button orther">+/-</button>
+            <button onclick="percent('*0.01')" class="button orther">%</button>
             <button onclick="cal('/')" class="button calculation">/</button>
             <button onclick="num(7)" class="button number">7</button>
             <button onclick="num(8)" class="button number">8</button>
@@ -43,32 +35,8 @@
             <button onclick="num(3)" class="button number">3</button>
             <button onclick="cal('+')" class="button calculation">+</button>
             <button onclick="num(0)" class="button number" style="width: 110px; text-align: left; padding-left: 22px;">0</button>
-            <button onclick="cal('.')" class="button number">,</button>
+            <button onclick="doc('.')" class="button number">,</button>
             <button onclick="res()" class="button calculation">=</button>
     </div>
-
-
-
-<script>
-var calculation ="";
-function num(x){
-    calculation += x;
-}
-function cal(pt){
-    calculation += pt;
-}
-function res(){
-    var result = eval(calculation);
-    alert(calculation + "=" + result);
-    calculation="";
-}
-
-var x = 10;
-var y = 70;
-var sum = x+y;
-document.getElementById("text2").innerHTML = sum;
-</script>
-
- 
 </body>
 </html>

@@ -1,39 +1,37 @@
-// var calculation ="";
-// function num(x){
-//     calculation += x;
-// }
-// function cal(pt){
-//     calculation += pt;
-// }
-// function res(){
-//     var result = eval(calculation);
-//     alert(calculation + "=" + result);
-//     calculation="";
-// }
-
-// function getOutput(){
-// 	return document.getElementById("output-value").innerText;
-// }
-// function printOutput(num){
-// 	if(num==""){
-// 		document.getElementById("output-value").innerText=num;
-// 	}
-// 	else{
-// 		document.getElementById("output-value").innerText=getFormattedNumber(num);
-// 	}	
-// }
-// function display(){
-//     document.getElementsByClassName("p").innerText = display;
-// }
-// alert(display);
-// var button = document.getElementsByClassName('button');
-// onclick.button{
-//     alert("hmm");
-// }
-// var p = document
-// function test{
-//     document.getElementsById("output--text").innerHTML = "I'm god";
-// }
-
-// output=output+this.id;
-// printOutput(output);
+var calculation ="";
+function cl(){
+    calculation = "";
+    document.getElementById("out").innerHTML = 0;
+}
+function negative(){
+    nega = calculation; 
+    nega = nega * -1;
+    calculation = nega;
+    document.getElementById("out").innerHTML = calculation;
+}
+function percent(perin){
+    per = calculation;
+    per = per * 0.01;
+    calculation = per;
+    document.getElementById("out").innerHTML = calculation;
+}
+ function doc(){
+    calculation += ".";
+    document.getElementById("out").innerHTML = calculation;
+}
+function num(x){
+    var text = x.toString();
+    calculation = calculation + text;
+    document.getElementById("out").innerHTML = calculation;
+}
+function cal(pt){
+    calculation1 = calculation;
+    calculation1 += pt;
+    calculation = "";
+}
+function res(){
+    calculationAll = calculation1 + calculation;
+    var result = eval(calculationAll);
+    document.getElementById("out").innerHTML = result;
+    calculation = result;
+}
