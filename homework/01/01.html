@@ -13,11 +13,18 @@
 <body>
     <div class="contener">
         <div class="output">
-            <div class="output--display">
-                <p onclick="test()" id="output--text">2003</p>
-                <pre id="demo"></pre>
+            <div class="output__display">
+                <p id="text2"></p>
             </div>
         </div>
+        <!-- <div id="result">
+            <div id="history">
+                <p id="history-value"></p>
+            </div>
+            <div id="output">
+                <p id="output-value"></p>
+            </div>
+        </div> -->
         <div class="input">
             <button onclick="cl()" class="button orther">AC</button>
             <button onclick="cal('/')" class="button orther">+/-</button>
@@ -39,12 +46,29 @@
             <button onclick="cal('.')" class="button number">,</button>
             <button onclick="res()" class="button calculation">=</button>
     </div>
-    <script>
-        function test() {
-            document.getElementsById("output--text").innerHTML = "I'm god";
-            let text = document.getElementById("myP").innerHTML;
-            document.getElementById("demo").innerText = text;
-        }
-    </script>
+
+
+
+<script>
+var calculation ="";
+function num(x){
+    calculation += x;
+}
+function cal(pt){
+    calculation += pt;
+}
+function res(){
+    var result = eval(calculation);
+    alert(calculation + "=" + result);
+    calculation="";
+}
+
+var x = 10;
+var y = 70;
+var sum = x+y;
+document.getElementById("text2").innerHTML = sum;
+</script>
+
+ 
 </body>
 </html>
