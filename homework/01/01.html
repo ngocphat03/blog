@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="01.css">
+    <script src="01.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Máy Tính</title>
+</head>
+<body>
+    <div class="contener">
+        <div class="output">
+            <div class="output--display">
+                <p onclick="test()" id="output--text">2003</p>
+                <pre id="demo"></pre>
+            </div>
+        </div>
+        <div class="input">
+            <button onclick="cl()" class="button orther">AC</button>
+            <button onclick="cal('/')" class="button orther">+/-</button>
+            <button onclick="cal('*0.01')" class="button orther">%</button>
+            <button onclick="cal('/')" class="button calculation">/</button>
+            <button onclick="num(7)" class="button number">7</button>
+            <button onclick="num(8)" class="button number">8</button>
+            <button onclick="num(9)" class="button number">9</button>
+            <button onclick="cal('*')" class="button calculation">x</button>
+            <button onclick="num(4)" class="button number">4</button>
+            <button onclick="num(5)" class="button number">5</button>
+            <button onclick="num(6)" class="button number">6</button>
+            <button onclick="cal('-')" class="button calculation">-</button>
+            <button onclick="num(1)" class="button number">1</button>
+            <button onclick="num(2)" class="button number">2</button>
+            <button onclick="num(3)" class="button number">3</button>
+            <button onclick="cal('+')" class="button calculation">+</button>
+            <button onclick="num(0)" class="button number" style="width: 110px; text-align: left; padding-left: 22px;">0</button>
+            <button onclick="cal('.')" class="button number">,</button>
+            <button onclick="res()" class="button calculation">=</button>
+    </div>
+    <script>
+        function test() {
+            document.getElementsById("output--text").innerHTML = "I'm god";
+            let text = document.getElementById("myP").innerHTML;
+            document.getElementById("demo").innerText = text;
+        }
+    </script>
+</body>
+</html>
