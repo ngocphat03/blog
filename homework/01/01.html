@@ -21,22 +21,22 @@
             <button onclick="cl()" class="button orther">AC</button>
             <button onclick="negative('* -1')" class="button orther">+/-</button>
             <button onclick="percent('*0.01')" class="button orther">%</button>
-            <button onclick="cal('/')" class="button calculation">/</button>
+            <button onclick="cal('/');div();" class="button calculation" id="division">/</button>
             <button onclick="num(7)" class="button number">7</button>
             <button onclick="num(8)" class="button number">8</button>
             <button onclick="num(9)" class="button number">9</button>
-            <button onclick="cal('*')" class="button calculation">x</button>
+            <button onclick="cal('*');mul();" class="button calculation" id="multiplication">x</button>
             <button onclick="num(4)" class="button number">4</button>
             <button onclick="num(5)" class="button number">5</button>
             <button onclick="num(6)" class="button number">6</button>
-            <button onclick="cal('-')" class="button calculation">-</button>
+            <button onclick="cal('-');sub();" class="button calculation" id="subtraction">-</button>
             <button onclick="num(1)" class="button number">1</button>
             <button onclick="num(2)" class="button number">2</button>
             <button onclick="num(3)" class="button number">3</button>
-            <button onclick="cal('+')" class="button calculation">+</button>
+            <button onclick="cal('+');add();" onclick class="button calculation" id="addition">+</button>
             <button onclick="num(0)" class="button number" style="width: 110px; text-align: left; padding-left: 22px;">0</button>
             <button onclick="doc('.')" class="button number">,</button>
-            <button onclick="res()" class="button calculation">=</button>
+            <button onclick="res();resetColor();" class="button calculation">=</button>
     </div>
 </body>
 </html>
