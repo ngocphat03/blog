@@ -27,7 +27,7 @@ p{
     display: inline-block;
     float: left;
 }
-#box{
+.box{
     width: 200px;
     height: 200px;
     background-color: white;
@@ -39,6 +39,43 @@ p{
     height: 100%;
     color: white;
 }
-.box1X, .box1O, .box2X, .box2O, .box3X, .box3O, .box4X, .box4O, .box5X, .box5O, .box6X, .box6O, .box7X, .box7O, .box8X, .box8O, .box9X, .box9O {
+#reset{
+    width: 100px;
+    height: 100px;
+}
+/* .box1X, #box1O, .box2X, .box2O, .box3X, .box3O, .box4X, .box4O, .box5X, .box5O, .box6X, .box6O, .box7X, .box7O, .box8X, .box8O, .box9X, .box9O {
     display: none;
+} */
+/* #box1X{
+    display: none;
+} */
+.title{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin: 25px 0px;
+}
+.score{
+    width: 100%;
+    height: 300px;
+    margin: 25px 0px;
+    text-align: center;
+}
+.score__xo{
+    width: 100%;
+    height: 250px;
+    background-color: blueviolet;
+    display: inline-flex;
+}
+.score__xo--x{
+    width: 50%;
+    height: 250px;
+    background-color: chocolate;
+}
+.score__xo--o{
+    width: 50%;
+    height: 250px;
+    background-color: deeppink;
+    position: a;
+    float: left;
 }

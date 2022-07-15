@@ -10,45 +10,52 @@
 <body>
     <div class="contaner">
         <div class="contaner__main">
-            <button onclick="box1" id="box">
-                <p class="box1X">X</p>
-                <p class="box1O">O</p>
+            <button onclick="box1()" id="box1" class="box">
+                <p id="box1XO" id="BOX1"></p>
             </button>
-            <button onclick="box2" id="box">
-                <p class="box2X">X</p>
-                <p class="box2O">O</p>
+            <button onclick="box2()" id="box2" class="box">
+                <p id="box2XO"></p>
             </button>
-            <button onclick="box3" id="box">
-                <p class="box3X">X</p>
-                <p class="box3O">O</p>
+            <button onclick="box3()" id="box3" class="box">
+                <p id="box3XO"></p>
             </button>
-            <button onclick="box4" id="box">
-                <p class="box4X">X</p>
-                <p class="box4O">O</p>
+            <button onclick="box4()" id="box4" class="box">
+                <p id="box4XO"></p>
             </button>
-            <button onclick="box5" id="box">
-                <p class="box5X">X</p>
-                <p class="box5O">O</p>
+            <button onclick="box5()" id="box5" class="box">
+                <p id="box5XO"></p>
             </button>
-            <button onclick="box6" id="box">
-                <p class="box6X">X</p>
-                <p class="box6O">O</p>
+            <button onclick="box6()" id="box6" class="box">
+                <p id="box6XO"></p>
             </button>
-            <button onclick="box7" id="box">
-                <p class="box7X">X</p>
-                <p class="box7O">O</p>
+            <button onclick="box7()" id="box7" class="box">
+                <p id="box7XO"></p>
             </button>
-            <button onclick="box8" id="box">
-                <p class="box8X">X</p>
-                <p class="box8O">O</p>
+            <button onclick="box8()" id="box8" class="box">
+                <p id="box8XO"></p>
             </button>
-            <button onclick="box9" id="box">
-                <p class="box9X">X</p>
-                <p class="box9O">O</p>
+            <button onclick="box9()" id="box9" class="box">
+                <p id="box9XO"></p>
             </button>
         </div>
         <div class="contaner__point">
-            point
+            <div class="title">
+                <h1>Tic Tac Toc</h1>
+                <h3>By AXit</h3>
+            </div>
+            <div class="score">
+                <h1>Score</h1>
+                <div class="score__xo">
+                    <div class="score__xo--x">
+                        <div class="box-x">X</div>
+                    </div>
+                    <div class="score__xo--o">
+                        <div class="box-o">O</div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="reset()" id="reset">Reset</button>
+            <button onclick="check()"> sfdsg</button>
         </div>
     </div>
 </body>
