@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    font-size: 150px;
+    text-align: center;
+    line-height: 100%;
+}
+.contaner{
+    width: 1012px;
+    height: 606px;
+    margin: 20px auto auto auto;
+    border-style: 5px solid;
+}
+.contaner__main{
+    width: 600px;
+    height: 600px;
+    background-color: red;
+    float: left;
+    border: 3px solid black;
+}
+.contaner__point{
+    width: 406px;
+    height: 606px;
+    background-color: yellow;
+    display: inline-block;
+    float: left;
+}
+#box{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    float: left;
+    border: 3px solid black;
+}
+.x{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.box1X, .box1O, .box2X, .box2O, .box3X, .box3O, .box4X, .box4O, .box5X, .box5O, .box6X, .box6O, .box7X, .box7O, .box8X, .box8O, .box9X, .box9O {
+    display: none;
+}
