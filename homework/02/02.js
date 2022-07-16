@@ -11,20 +11,47 @@ var truongHop7 = '';
 var truongHop8 = '';
 var diemX = 0;
 var diemO = 0;
-
-// //check
+//do dai cac phan tu
+var doDai1 = 0;
+var doDai2 = 0;
+var doDai3 = 0;
+var doDai4 = 0;
+var doDai5 = 0;
+var doDai6 = 0;
+var doDai7 = 0;
+var doDai8 = 0;
+var kiemTra1 = 0;
+var kiemTra2 = 0;
+//check
 function check(){
     if(truongHop1 == 'xxx' || truongHop2 == 'xxx' || truongHop3 == 'xxx' || truongHop4 == 'xxx' || truongHop5 == 'xxx' || truongHop6 == 'xxx' || truongHop7 == 'xxx' || truongHop8 == 'xxx'){
         var displayX = document.getElementById('x-win');
         displayX.style.display = "block";
         diemX += 1;
         document.getElementById("point-x").innerHTML = diemX; 
+        kiemTra1 = 2;
     }
     if(truongHop1 == 'ooo' || truongHop2 == 'ooo' || truongHop3 == 'ooo' || truongHop4 == 'ooo' || truongHop5 == 'ooo' || truongHop6 == 'ooo' || truongHop7 == 'ooo' || truongHop8 == 'ooo'){
         var displayO = document.getElementById('o-win');
         displayO.style.display = "block";
         diemO += 1;
         document.getElementById("point-o").innerHTML = diemO; 
+        kiemTra2 = 2;
+    }
+    else{
+        //do dai cac phan tu
+        doDai1 = truongHop1.length;
+        doDai2 = truongHop2.length;
+        doDai3 = truongHop3.length;
+        doDai4 = truongHop4.length;
+        doDai5 = truongHop5.length;
+        doDai6 = truongHop6.length;
+        doDai7 = truongHop7.length;
+        doDai8 = truongHop8.length;
+        if(doDai1==3 && doDai2==3 && doDai3==3 && doDai4==3 && doDai5==3 && doDai6==3 && doDai7==3 && doDai8==3 && kiemTra1==0 && kiemTra2==0){
+            var displaytwoChicken = document.getElementById('twoChicken');
+            displaytwoChicken.style.display = "block";
+        }
     }
 }
 var box1X = true;
@@ -276,6 +303,16 @@ function reset(){
     truongHop6 = '';
     truongHop7 = '';
     truongHop8 = '';
+    doDai1 = 0;
+    doDai2 = 0;
+    doDai3 = 0;
+    doDai4 = 0;
+    doDai5 = 0;
+    doDai6 = 0;
+    doDai7 = 0;
+    doDai8 = 0;
+    kiemTra1 = 0;
+    kiemTra2 = 0;
 }
 
 //Change
@@ -300,6 +337,12 @@ function okeXBtn(){
 function okeOBtn(){
     var displayO = document.getElementById('o-win');
     displayO.style.display = "none";
+    reset();
+}
+//Turn of display: Play O winfunction okeOBtn()
+function oke2chickenBtn(){
+    var displayTwoChicken = document.getElementById('twoChicken');
+    displayTwoChicken.style.display = "none";
     reset();
 }
 
