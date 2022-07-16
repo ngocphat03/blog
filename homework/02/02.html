@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="02.css">
     <script src="02.js"></script>
     <title>Caro 3x3</title>
@@ -11,7 +14,7 @@
     <div class="contaner">
         <div class="contaner__main">
             <button onclick="box1()" id="box1" class="box">
-                <p id="box1XO" id="BOX1"></p>
+                <p id="box1XO"></p>
             </button>
             <button onclick="box2()" id="box2" class="box">
                 <p id="box2XO"></p>
@@ -47,16 +50,25 @@
                 <h1>Score</h1>
                 <div class="score__xo">
                     <div class="score__xo--x">
-                        <div class="box-x">X</div>
+                        <span class="box-x">X</span>
+                        <span id="point-x">0</span>
                     </div>
+                    <div class="fixed"><br>:</div>
                     <div class="score__xo--o">
-                        <div class="box-o">O</div>
+                        <span class="box-o">O</span>
+                        <span id="point-o">0</span>
                     </div>
                 </div>
             </div>
             <button onclick="reset()" id="reset">Reset</button>
-            <button onclick="check()"> sfdsg</button>
+            <button onclick="change()" id="change">First: X</button>
         </div>
+    </div>
+    <div id="x-win">Player X win
+        <button onclick="okeXBtn()" id="oke-x">OK</button>
+    </div>
+    <div id="o-win">Player O win
+        <button onclick="okeOBtn()" id="oke-o">OK</button>
     </div>
 </body>
 </html>
