@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #ddeef4;
+    font-size: 20px;
+}
+.contaner1{
+    width: 2880px;
+    height: 1825px;
+    background-color: white;
+    margin: auto;
+    border-radius: 20px;
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+}
+.navbar{
+    width: 100%;
+    height: 160px;
+    background-color: white;
+}
+.navbar__menu--list li{
+    margin-left: 65px;
+    padding-left: 20px;
+    float: left;
+    display: inline;
+    line-height: 160px;
+    background-color: white;
+    font-size: 20px;
+}
+.navbar__user{
+    margin-right: 80px;
+    background-color: white;
+}
+.navbar__user--list li{
+    margin-left: 20px;
+    float: right;
+    display: inline;
+    line-height: 160px;
+    font-size: 22px;
+    background-color: white;
+}
+.navbar__user--avata{
+    margin-right: 8px;
+    width: 75px;
+    height: 75px;
+    border-radius: 15px;
+    left: 50%;
+    top: 50%;
+    transform: translate(0px, 25px);
+}
+.main{
+    margin-top: 100px;
+    width: 100%;
+    height: 195px;
+    background-color: white;
+}
+.main__user{
+    float: left;
+}
+h1{
+    font-size: 70px;
+    background-color: white;
+}
+.page{
+    margin: 0px 80px;
+    background-color: white;
+}
+.main__user--amount{
+    font-size: 14px;
+    background-color: white;
+}
+.main__user--amount p{
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: white;
+}
+.main__button{
+    display: inline;
+}
+.main__button--btn{
+    width: 275px;
+    height: 85px;
+    float: right;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #103c82;
+}
+.main__button i{
+    width: 35px;
+    height: 35px;
+    border: 2px solid white;
+    color: white;
+    background-color: #103c82;
+    border-radius: 50%;
+    line-height: 35px;
+    transform: translateY(-10%);
+}
+.main__button span{
+    margin-left: 20px;
+    color: white;
+    background-color: #103c82;
+    font-size: 25px;
+    line-height: 85px;
+}
+.search{
+    width: 100%;
+    height: 190px;
+    border-radius: 15px;
+    background-color: #fafbff;
+}
+.search i{
+    position: relative;
+}
+.search--glass{
+    left: 85px;
+    top: 80px;
+    font-size: 35px;
+    z-index: 100;
+    background-color: white;
+}
+.search--setting{
+    right: -2580px;
+    top: -60px;
+    font-size: 35px;
+    z-index: 100;
+    background-color: white;
+}
+.search--nav{
+    width: 2640px;
+    height: 110px;
+    border: 4px solid #d9dbe4;
+    display: block;
+    border-radius: 15px;
+    color: #d9dbe4;
+    background-color: white;
+    padding-left: 105px;
+    position: relative;
+    top: 5px;
+    box-sizing: border-box;
+    margin: auto;
+    font-size: 20px;
+}
+.users--selected{
+    margin-top: 45px;
+    width: 100%;
+    height: 85px;
+    background-color: black;
+}
