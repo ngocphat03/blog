@@ -135,3 +135,92 @@ function reset(){
     PP5Btn.style.backgroundColor = "#ffffff";
     
 }
+
+
+var checkOd01 = 1;
+function order01Hover(){
+    checkOd01 += 1;
+    if(checkOd01 % 2 == 0){
+        var orderButton01 = document.getElementById('orderButton01');
+        orderButton01.style.display = "block";
+    }
+    else{
+        var orderButton01 = document.getElementById('orderButton01');
+        orderButton01.style.display = "none";
+    }
+}
+var checkOd02 = 1;
+function order02Hover(){
+    checkOd02 += 1;
+    if(checkOd02 % 2 == 0){
+        var orderButton02 = document.getElementById('orderButton02');
+        orderButton02.style.display = "block";
+    }
+    else{
+        var orderButton02 = document.getElementById('orderButton02');
+        orderButton02.style.display = "none";
+    }
+}
+var checkOd03 = 1;
+function order03Hover(){
+    checkOd03 += 1;
+    if(checkOd03 % 2 == 0){
+        var orderButton03 = document.getElementById('orderButton03');
+        orderButton03.style.display = "block";
+    }
+    else{
+        var orderButton03 = document.getElementById('orderButton03');
+        orderButton03.style.display = "none";
+    }
+}
+var checkOd04 = 1;
+function order04Hover(){
+    checkOd04 += 1;
+    if(checkOd04 % 2 == 0){
+        var orderButton04 = document.getElementById('orderButton04');
+        orderButton04.style.display = "block";
+    }
+    else{
+        var orderButton04 = document.getElementById('orderButton04');
+        orderButton04.style.display = "none";
+    }
+}
+var checkOd05 = 1;
+function order05Hover(){
+    checkOd05 += 1;
+    if(checkOd05 % 2 == 0){
+        var orderButton05 = document.getElementById('orderButton05');
+        orderButton05.style.display = "block";
+    }
+    else{
+        var orderButton05 = document.getElementById('orderButton05');
+        orderButton05.style.display = "none";
+    }
+}
+function user(){
+    var pageOrder = document.getElementById("page-oder");
+    pageOrder.style.display = "none";
+    var pageUser = document.getElementById("page-user");
+    pageUser.style.display = "block";
+
+    var orders = document.getElementById("orders");
+    orders.style.border = "0";
+    orders.style.backgroundColor = "white";
+    var user = document.getElementById("user");
+    user.style.border = "2px solid #c7d2e6";
+    user.style.backgroundColor = "#f5f8ff";
+}
+function order(){
+    var pageUser = document.getElementById("page-user");
+    pageUser.style.display = "none";
+    var pageOrder = document.getElementById("page-oder");
+    pageOrder.style.display = "block";
+
+    var orders = document.getElementById("orders");
+    orders.style.border = "2px solid #c7d2e6";
+    orders.style.backgroundColor = "#f5f8ff";
+    
+    var user = document.getElementById("user");
+    user.style.border = "0";
+    user.style.backgroundColor = "white";
+}

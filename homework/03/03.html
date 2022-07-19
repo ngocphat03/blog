@@ -16,9 +16,9 @@
             <div class="navbar__menu">
                 <ul class="navbar__menu--list">
                     <li>Clients</li>
-                    <li>Orders</li>
+                    <li onclick="order()" id="orders">Orders</li>
                     <li>Messages</li>
-                    <li class="main-page" style=" color: #103c82; background-color: #f5f8ff;">Users</li>
+                    <li onclick="user()" id="user" class="main-page" style=" color: #103c82; background-color: #f5f8ff;">Users</li>
                     <li>Settings</li>
                 </ul>
             </div>
@@ -32,7 +32,7 @@
         </div>
         <hr style="background-color: #ddeef4;">
         
-        <div class="page">
+        <div id="page-user" class="page">
             <div class="main">
                 <div class="main__user">
                     <div class="main__user--amount">
@@ -49,7 +49,7 @@
             </div>
             <div class="search">
                 <i class="fa-solid fa-magnifying-glass search--glass"></i>
-                <input class="search--nav" type="text" placeholder="" value="Search for user, email address...">
+                <input class="search--nav" type="text" placeholder="Search for user, email address..." value="">
                 <i class="fa-solid fa-sliders search--setting"></i>
             </div>
             <div class="users--selected">
@@ -124,6 +124,223 @@
             </div>
             <div class="page__number">
                 <div class="page__number--total-pages">1-5 of 23</div>
+                <div class="page__number--control">
+                    <span class="page__number--control--text">Rows per page:</span>
+                    <div class="total-page">
+                        <span>5</span>
+                        <span class="fa-solid fa-angle-down"></span>
+                    </div>
+                    <span class="page-control">
+                        <i class="fa-solid fa-arrow-left page-control-left"></i>
+                        <i class="fa-solid fa-arrow-right page-control-right"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="page-oder" class="page02">
+            <div class="main">
+                <div class="main__user">
+                    <div class="main__user--amount">
+                        <h1>Orders</h1>
+                        <p>56 orders</p>
+                    </div>
+                </div>
+                <div class="main__button">
+                    <button class="main__button--btn">
+                        <i class="fa-solid fa-plus"></i>
+                        <span> New order</span>
+                    </button>
+                </div>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass search--glass"></i>
+                <input class="search--nav" type="text" placeholder="Search for ID code, name, package ID email address.." value="">
+                <i class="fa-solid fa-sliders search--setting"></i>
+            </div>
+            <div class="order__title">
+                <div class="order__title--id">
+                    <div class="order__title--id--btn"></div>
+                    <div class="order__title--id--name">
+                        <span>Order ID</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="order__title--number"></div>
+                <div class="order__title--name">
+                    <span>Name</span>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div class="order__title--email">
+                    <span>Email Address</span>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div class="order__title--package-id">
+                    <span>Package ID</span>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                 <div class="order__title--status">
+                    <span>Status</span>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div class="order__title--date">
+                    <span>Date</span>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+            </div>
+            <hr>
+            <div id="order01" class="order__user" style="height: 150px;" onmouseover="order01Hover()">
+                <div class="order__user--id">
+                    <div class="order__user--id--btn"></div>
+                    <div class="order__user--id--name">
+                        <span>29P1PFZ75690DFG</span>
+                    </div>
+                </div>
+                <div class="order__user--number">
+                    <span>3587230957</span>
+                </div>
+                <div class="order__user--name">
+                    <span>Earl Owen</span>
+                </div>
+                <div class="order__user--email">
+                    <span>earlowen@mail.com</span>
+                </div>
+                <div class="order__user--package-id">
+                    <span>vmta-cp4pm</span>
+                </div>
+                 <div class="order__user--status">
+                    <div class="order__user--status--btn"><span><i class="fa-solid fa-cube"></i>   Sent</span></div>
+                </div>
+                <div class="order__user--date">
+                    <span>22 Oct, 2021</span>
+                </div>
+                <div id="orderButton01" class="order__user--button">
+                    <span class="order__user--a"><i class="fa-solid fa-ellipsis"></i></span>
+                </div>
+            </div>
+            <hr>
+            <div id="order02" class="order__user" style="height: 150px;" onmouseover="order02Hover()">
+                <div class="order__user--id">
+                    <div class="order__user--id--btn"></div>
+                    <div class="order__user--id--name">
+                        <span>EF8HLA1234DFG00</span>
+                    </div>
+                </div>
+                <div class="order__user--number">
+                    <span>15632585</span>
+                </div>
+                <div class="order__user--name">
+                    <span>Marilyn Morales</span>
+                </div>
+                <div class="order__user--email">
+                    <span>marilynmorales@mail.com</span>
+                </div>
+                <div class="order__user--package-id">
+                    <span>kndt-n3md</span>
+                </div>
+                <div class="order__user--status">
+                   <div class="order__user--status--btn"><span><i class="fa-solid fa-cube"></i>   Sent</span></div>
+               </div>
+                <div class="order__user--date">
+                    <span>8 Sep, 2021</span>
+                </div>
+                <div id="orderButton02" class="order__user--button">
+                    <span class="order__user--a"><i class="fa-solid fa-ellipsis"></i></span>
+                </div>
+            </div>
+            <hr>
+            <div id="order03" class="order__user" style="height: 150px;" onmouseover="order03Hover()">
+                <div class="order__user--id">
+                    <div class="order__user--id--btn"></div>
+                    <div class="order__user--id--name">
+                        <span>0QR29XA83NFJGHJ</span>
+                    </div>
+                </div>
+                <div class="order__user--number">
+                    <span>3598109483</span>
+                </div>
+                <div class="order__user--name">
+                    <span>Ashley Schneider</span>
+                </div>
+                <div class="order__user--email">
+                    <span>ashleyschneider@gmail.com</span>
+                </div>
+                <div class="order__user--package-id">
+                    <span>epu7-qhga</span>
+                </div>
+                <div class="order__user--status">
+                   <div class="order__user--status--btn"><span><i class="fa-solid fa-cube"></i>   Sent</span></div>
+               </div>
+                <div class="order__user--date">
+                    <span>17 Oct, 2021</span>
+                </div>
+                <div id="orderButton03" class="order__user--button">
+                    <span class="order__user--a"><i class="fa-solid fa-ellipsis"></i></span>
+                </div>
+            </div>
+            <hr>
+            <div id="order04" class="order__user" style="height: 150px;"  onmouseover="order04Hover()">
+                <div class="order__user--id">
+                    <div class="order__user--id--btn"></div>
+                    <div class="order__user--id--name">
+                        <span>6YT65EN123435BC</span>
+                    </div>
+                </div>
+                <div class="order__user--number">
+                    <span>5231900350</span>
+                </div>
+                <div class="order__user--name">
+                    <span>Sandra Ingram</span>
+                </div>
+                <div class="order__user--email">
+                    <span>sandraingram@mail.com</span>
+                </div>
+                <div class="order__user--package-id">
+                    <span>--</span>
+                </div>
+                <div class="order__user--status">
+                   <div class="order__user--status--btn--off"><span><i class="fa-regular fa-clock"></i>   Pending</span></div>
+               </div>
+                <div class="order__user--date">
+                    <span>1 Feb, 2021</span>
+                </div>
+                <div id="orderButton04" class="order__user--button">
+                    <span class="order__user--a"><i class="fa-solid fa-ellipsis"></i></span>
+                </div>
+            </div>
+            <hr>
+            <div id="order05" class="order__user" style="height: 150px;" onmouseover="order05Hover()">
+                <div class="order__user--id">
+                    <div class="order__user--id--btn"></div>
+                    <div class="order__user--id--name">
+                        <span>8U3IJPZRRTOMAS2</span>
+                    </div>
+                </div>
+                <div class="order__user--number">
+                    <span>3402350234</span>
+                </div>
+                <div class="order__user--name">
+                    <span>Krista Hanson</span>
+                </div>
+                <div class="order__user--email">
+                    <span>khisrahanson@mail.com</span>
+                </div>
+                <div class="order__user--package-id">
+                    <span>wpt9-jh2v</span>
+                </div>
+                <div class="order__user--status">
+                   <div class="order__user--status--btn"><span><i class="fa-solid fa-cube"></i>   Sent</span></div>
+               </div>
+                <div class="order__user--date">
+                    <span>24 May, 2021</span>
+                </div>
+                <div id="orderButton05" class="order__user--button">
+                    <span class="order__user--a"><i class="fa-solid fa-ellipsis"></i></span>
+                </div>
+            </div>
+            <div class="page__number">
+                <div class="page__number--total-pages">1-5 of 47</div>
                 <div class="page__number--control">
                     <span class="page__number--control--text">Rows per page:</span>
                     <div class="total-page">
