@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="03.css">
-    <script src="https://kit.fontawesome.com/205daebc46.js" crossorigin="anonymous"></script>   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/205daebc46.js" crossorigin="anonymous"></script>  
+    <script src="03.js"></script> 
     <title>03</title>
 </head>
 <body>
@@ -14,7 +18,7 @@
                     <li>Clients</li>
                     <li>Orders</li>
                     <li>Messages</li>
-                    <li>Users</li>
+                    <li class="main-page" style=" color: #103c82; background-color: #f5f8ff;">Users</li>
                     <li>Settings</li>
                 </ul>
             </div>
@@ -49,7 +53,88 @@
                 <i class="fa-solid fa-sliders search--setting"></i>
             </div>
             <div class="users--selected">
-                
+                <i id="reset" onclick="reset()" class="fa-solid fa-minus button-minus" style="line-height: 35px;"></i>
+                <p id="allUser">0 users selected</p>
+            </div>
+            <div class="people">
+                <div onclick="people1()" id="people1" class=" people__list">
+                    <div id="PP1Btn" class="people__list--button"><i class="fa-solid fa-check"></i></div>
+                    <div class="people__list--avata"><img src="/img/newavt.jpg" alt="avt" class="people__list--img"></div>
+                    <div class="people__list--name">Jane Cooper</div>
+                    <div class="people__list--mail">janecooper@mail.com</div>
+                    <div class="people__list--office">Admin</div>
+                    <div class="people__list--active">
+                        <i class="fa-solid fa-circle"></i>
+                        <p>Active</p>
+                    </div>
+                    <div class="people__list--time">13 minutes ago</div>
+                </div>
+                <hr>
+                <div onclick="people2()" id="people2" class=" people__list">
+                    <div id="PP2Btn" class="people__list--button"><i class="fa-solid fa-check"></i></div>
+                    <div class="people__list--avata"><img src="/img/newavt.jpg" alt="avt" class="people__list--img"></div>
+                    <div class="people__list--name">Wade Warren</div>
+                    <div class="people__list--mail">wadewarrenr@mail.com</div>
+                    <div class="people__list--office">Editor</div>
+                    <div class="people__list--active">
+                        <i class="fa-solid fa-circle"></i>
+                        <p>Active</p>
+                    </div>
+                    <div class="people__list--time">47 minutes ago</div>
+                </div>
+                <hr>
+                <div onclick="people3()" id="people3" class=" people__list">
+                    <div id="PP3Btn" class="people__list--button"><i class="fa-solid fa-check"></i></div>
+                    <div class="people__list--avata"><img src="/img/newavt.jpg" alt="avt" class="people__list--img"></div>
+                    <div class="people__list--name">Esther Howard</div>
+                    <div class="people__list--mail">estherhoward@mail.com</div>
+                    <div class="people__list--office">Editor</div>
+                    <div class="people__list--active">
+                        <i class="fa-solid fa-circle"></i>
+                        <p>Active</p>
+                    </div>
+                    <div class="people__list--time">24 minutes ago</div>
+                </div>
+                <hr>
+                <div onclick="people4()" id="people4" class=" people__list">
+                    <div id="PP4Btn" class="people__list--button"><i class="fa-solid fa-check"></i></div>
+                    <div class="people__list--avata"><img src="/img/newavt.jpg" alt="avt" class="people__list--img"></div>
+                    <div class="people__list--name">Brooklyn Simmons</div>
+                    <div class="people__list--mail">brooklynsimmons@mail.com</div>
+                    <div class="people__list--office">Editor</div>
+                    <div class="people__list--inactive">
+                        <i class="fa-solid fa-circle"></i>
+                        <p>Inactive</p>
+                    </div>
+                    <div style="position: relative; left: -25px;" class="people__list--time">1 month ago</div>
+                </div>
+                <hr>
+                <div onclick="people5()" id="people5" class=" people__list">
+                    <div id="PP5Btn" class="people__list--button"><i class="fa-solid fa-check"></i></div>
+                    <div class="people__list--avata"><img src="/img/newavt.jpg" alt="avt" class="people__list--img"></div>
+                    <div class="people__list--name">Robert Fox</div>
+                    <div class="people__list--mail">robertfox@mail.com</div>
+                    <div class="people__list--office">Editor</div>
+                    <div class="people__list--active">
+                        <i class="fa-solid fa-circle"></i>
+                        <p>Active</p>
+                    </div>
+                    <div class="people__list--time">5 minutes ago</div>
+                </div>
+            </div>
+            <div class="page__number">
+                <div class="page__number--total-pages">1-5 of 23</div>
+                <div class="page__number--control">
+                    <span class="page__number--control--text">Rows per page:</span>
+                    <div class="total-page">
+                        <span>5</span>
+                        <span class="fa-solid fa-angle-down"></span>
+                    </div>
+                    <span class="page-control">
+                        <i class="fa-solid fa-arrow-left page-control-left"></i>
+                        <i class="fa-solid fa-arrow-right page-control-right"></i>
+                    </span>
+                </div>
             </div>
         </div>
     </div>
