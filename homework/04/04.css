@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#page{
+    width: 2880px;
+    height: 1640px;
+    margin: auto;
+}
+.header{
+    width: 2880px;
+    height: 95px;
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+}
+.navbar__left{
+    width: 1260px;
+    height: 95px;
+    float: left;
+}
+.navbar__logo{
+    width: 60px;
+    height: 60px;
+    float: left;
+    background-color: black;
+    margin: 0px 30px 0px 40px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navbar__menu--list li{
+    margin: 0px 20px;
+    height: 95px;
+    padding: 0px 10px;
+    float: left;
+    display: inline;
+    line-height: 95px;
+    color: #656774;
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.navbar__right{
+    width: 570px;
+    height: 95px;
+    float: right;
+}
+.navbar__right__account{
+    margin: 0px 40px 0px 0px;
+    width: 315px;
+    height: 50px;
+    line-height: 50px;
+    /* background-color: black; */
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navbar__right__account--ring{
+    float: right;
+    margin: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
+}
+.navbar__right__account--work{
+    float: right;
+    margin: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
+}
+.navbar__right__account--setting{
+    float: right;
+    margin: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
+}
+.navbar__right__account--avatar{
+    float: right;
+    margin: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
+}
+.setting{
+    color: ;
+}
+.logo-circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    float: right;
+    border: 0px;
+}
+.navbar__right__advanced{
+    float: left;
+    line-height: 95px;
+    color: #6392e0;
+}
+.menu{
+    width: 350px;
+    height: 1545px;
+    float: left;
+    background-color: white;
+}
+.user{
+    width: 100%;
+    height: 215px;
+    color: #656774;
+}
+.user__user{
+    padding: 40px 0px 0px 40px;
+}
+.user__create{
+    margin: 27px 0px 0px 40px;
+}
+.user__roles{
+    margin: 27px 0px 0px 40px;
+
+}
+.list__management--text{
+    margin: 40px 0px 0px 40px;
+    color: #656774;
+}
+.list-management__service-catalog{
+    margin: 40px 0px 0px 40px;
+    color: #6b7376;
+}
+.list-management__states{
+    margin: 30px 0px 40px 40px;
+    color: #6b7376;
+}
+.list{
+    margin: 30px 0px 0px 40px;
+    color: #6b7376;
+}
+.more{
+    margin: 30px 0px 0px 40px;
+    color: #6b7376;
+}
+.more__inventory{
+    margin: 0px 0px 30px 0px;
+}
+.more__themes{
+    margin: 0px 0px 30px 0px;
+}
+.more__inventory-orders{
+    margin: 0px 0px 30px 0px;
+}
+.span1{
+    margin-left: 10px;
+}
+.main{
+    width: 2530px;
+    height: 1545px;
+    background-color: blue;
+    float: left;
+}
+.main__title{
+    width: 100%;
+    height: 95px;
+    background-color: white;
+}
+.main__title__left{
+    line-height: 95px;
+    float: left;
+}
+.title{
+    margin-left: 45px;
+    font-size: 20px;
+}
+.number{
+    margin-left: 20px;
+    font-size: 20px;    
+}
+.main__title__right{
+    float: right;
+}
+.main__title__right__more{
+    width: 65px;
+    height: 50px;
+    border: 2px solid #6b7376;
+    transform: translateY(20px);
+    margin-right: 40px;
+    border-radius: 5px;
+}
+.main__title__right__new-order{
+    
+}
