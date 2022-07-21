@@ -141,62 +141,145 @@ var checkOd01 = 1;
 function order01Hover(){
     checkOd01 += 1;
     if(checkOd01 % 2 == 0){
-        var orderButton01 = document.getElementById('orderButton01');
-        orderButton01.style.display = "block";
+        var odCheckBtn1 = document.getElementById('odCheckBtn1');
+        odCheckBtn1.style.backgroundColor = "#103c82";
+        var bgClOdr1 = document.getElementById('order01');
+        bgClOdr1.style.backgroundColor = "#edf3ff";
     }
     else{
-        var orderButton01 = document.getElementById('orderButton01');
-        orderButton01.style.display = "none";
+        var odCheckBtn1 = document.getElementById('odCheckBtn1');
+        odCheckBtn1.style.backgroundColor = "#ffffff";
+        var bgClOdr1 = document.getElementById('order01');
+        bgClOdr1.style.backgroundColor = "#ffffff";
     }
 }
 var checkOd02 = 1;
 function order02Hover(){
     checkOd02 += 1;
     if(checkOd02 % 2 == 0){
-        var orderButton02 = document.getElementById('orderButton02');
-        orderButton02.style.display = "block";
+        var odCheckBtn2 = document.getElementById('odCheckBtn2');
+        odCheckBtn2.style.backgroundColor = "#103c82";
+        var bgClOdr2 = document.getElementById('order02');
+        bgClOdr2.style.backgroundColor = "#edf3ff";
     }
     else{
-        var orderButton02 = document.getElementById('orderButton02');
-        orderButton02.style.display = "none";
+        var odCheckBtn2 = document.getElementById('odCheckBtn2');
+        odCheckBtn2.style.backgroundColor = "#ffffff";
+        var bgClOdr2 = document.getElementById('order02');
+        bgClOdr2.style.backgroundColor = "#ffffff";
     }
 }
-var checkOd03 = 1;
+var checkOd03 = 3;
 function order03Hover(){
     checkOd03 += 1;
     if(checkOd03 % 2 == 0){
-        var orderButton03 = document.getElementById('orderButton03');
-        orderButton03.style.display = "block";
+        var odCheckBtn3 = document.getElementById('odCheckBtn3');
+        odCheckBtn3.style.backgroundColor = "#103c82";
+        var bgClOdr3 = document.getElementById('order03');
+        bgClOdr3.style.backgroundColor = "#edf3ff";
     }
     else{
-        var orderButton03 = document.getElementById('orderButton03');
-        orderButton03.style.display = "none";
+        var odCheckBtn3 = document.getElementById('odCheckBtn3');
+        odCheckBtn3.style.backgroundColor = "#ffffff";
+        var bgClOdr3 = document.getElementById('order03');
+        bgClOdr3.style.backgroundColor = "#ffffff";
     }
 }
 var checkOd04 = 1;
 function order04Hover(){
     checkOd04 += 1;
     if(checkOd04 % 2 == 0){
-        var orderButton04 = document.getElementById('orderButton04');
-        orderButton04.style.display = "block";
+        var odCheckBtn4 = document.getElementById('odCheckBtn4');
+        odCheckBtn4.style.backgroundColor = "#103c82";
+        var bgClOdr4 = document.getElementById('order04');
+        bgClOdr4.style.backgroundColor = "#edf3ff";
     }
     else{
-        var orderButton04 = document.getElementById('orderButton04');
-        orderButton04.style.display = "none";
+        var odCheckBtn4 = document.getElementById('odCheckBtn4');
+        odCheckBtn4.style.backgroundColor = "#ffffff";
+        var bgClOdr4 = document.getElementById('order04');
+        bgClOdr4.style.backgroundColor = "#ffffff";
     }
 }
 var checkOd05 = 1;
 function order05Hover(){
     checkOd05 += 1;
     if(checkOd05 % 2 == 0){
-        var orderButton05 = document.getElementById('orderButton05');
-        orderButton05.style.display = "block";
+        var odCheckBtn5 = document.getElementById('odCheckBtn5');
+        odCheckBtn5.style.backgroundColor = "#103c82";
+        var bgClOdr5 = document.getElementById('order05');
+        bgClOdr5.style.backgroundColor = "#edf3ff";
     }
     else{
-        var orderButton05 = document.getElementById('orderButton05');
-        orderButton05.style.display = "none";
+        var odCheckBtn5 = document.getElementById('odCheckBtn5');
+        odCheckBtn5.style.backgroundColor = "#ffffff";
+        var bgClOdr5 = document.getElementById('order05');
+        bgClOdr5.style.backgroundColor = "#ffffff";
     }
 }
+var checkOdAllClick = 1;
+function odAllClick(){
+    checkOdAllClick += 1;
+    if(checkOdAllClick % 2 == 0){
+        checkOd01 = 0;
+        checkOd02 = 0;
+        checkOd03 = 0;
+        checkOd04 = 0;
+        checkOd05 = 0;
+        var odAll = document.getElementById('odAll');
+        odAll.style.backgroundColor = "#103c82";
+        var odCheckBtn1 = document.getElementById('odCheckBtn1');
+        odCheckBtn1.style.backgroundColor = "#103c82";
+        var bgClOdr1 = document.getElementById('order01');
+        bgClOdr1.style.backgroundColor = "#edf3ff";
+        var odCheckBtn2 = document.getElementById('odCheckBtn2');
+        odCheckBtn2.style.backgroundColor = "#103c82";
+        var bgClOdr2 = document.getElementById('order02');
+        bgClOdr2.style.backgroundColor = "#edf3ff";
+        var odCheckBtn3 = document.getElementById('odCheckBtn3');
+        odCheckBtn3.style.backgroundColor = "#103c82";
+        var bgClOdr3 = document.getElementById('order03');
+        bgClOdr3.style.backgroundColor = "#edf3ff";
+        var odCheckBtn4 = document.getElementById('odCheckBtn4');
+        odCheckBtn4.style.backgroundColor = "#103c82";
+        var bgClOdr4 = document.getElementById('order04');
+        bgClOdr4.style.backgroundColor = "#edf3ff";
+        var odCheckBtn5 = document.getElementById('odCheckBtn5');
+        odCheckBtn5.style.backgroundColor = "#103c82";
+        var bgClOdr5 = document.getElementById('order05');
+        bgClOdr5.style.backgroundColor = "#edf3ff";
+    }
+    else{
+        checkOd01 = 1;
+        checkOd02 = 1;
+        checkOd03 = 1;
+        checkOd04 = 1;
+        checkOd05 = 1;
+        var odAll = document.getElementById('odAll');
+        odAll.style.backgroundColor = "#ffffff";
+        var odCheckBtn1 = document.getElementById('odCheckBtn1');
+        odCheckBtn1.style.backgroundColor = "#ffffff";
+        var bgClOdr1 = document.getElementById('order01');
+        bgClOdr1.style.backgroundColor = "#ffffff";
+        var odCheckBtn2 = document.getElementById('odCheckBtn2');
+        odCheckBtn2.style.backgroundColor = "#ffffff";
+        var bgClOdr2 = document.getElementById('order02');
+        bgClOdr2.style.backgroundColor = "#ffffff";
+        var odCheckBtn3 = document.getElementById('odCheckBtn3');
+        odCheckBtn3.style.backgroundColor = "#ffffff";
+        var bgClOdr3 = document.getElementById('order03');
+        bgClOdr3.style.backgroundColor = "#ffffff";
+        var odCheckBtn4 = document.getElementById('odCheckBtn4');
+        odCheckBtn4.style.backgroundColor = "#ffffff";
+        var bgClOdr4 = document.getElementById('order04');
+        bgClOdr4.style.backgroundColor = "#ffffff";
+        var odCheckBtn5 = document.getElementById('odCheckBtn5');
+        odCheckBtn5.style.backgroundColor = "#ffffff";
+        var bgClOdr5 = document.getElementById('order05');
+        bgClOdr5.style.backgroundColor = "#ffffff";
+    }
+}
+
 function user(){
     var pageOrder = document.getElementById("page-oder");
     pageOrder.style.display = "none";
@@ -204,7 +287,7 @@ function user(){
     pageUser.style.display = "block";
 
     var orders = document.getElementById("orders");
-    orders.style.border = "0";
+    orders.style.border = "2px solid white";
     orders.style.backgroundColor = "white";
     var user = document.getElementById("user");
     user.style.border = "2px solid #c7d2e6";
@@ -221,6 +304,6 @@ function order(){
     orders.style.backgroundColor = "#f5f8ff";
     
     var user = document.getElementById("user");
-    user.style.border = "0";
+    user.style.border = "2px solid white";
     user.style.backgroundColor = "white";
 }
