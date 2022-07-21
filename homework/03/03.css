@@ -3,6 +3,15 @@
     padding: 0px;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
+    font-size: #5c5e67;
+}
+hr {
+    
+    background-color: #ddeef4;
+    color: #e8f2f0;
+    /* color: white; */
+    height: 1px;
+    border: 1px solid #e8f2f0;
 }
 .screen{
     background-color: #eef7f9;
@@ -26,7 +35,7 @@
     background-color: white;
 }
 .navbar__menu--list{
-    margin-left: 20px;
+    margin-left: 40px;
 }
 .navbar__menu--list li{
     margin: 0px 20px;
@@ -36,20 +45,28 @@
     border-radius: 15px;
     float: left;
     display: inline;
-    line-height: 75px;
+    line-height: 66px;
     background-color: white;
     font-size: 20px;
     text-align: center;
     box-sizing: border-box;
+    color: #5c5e67;
+    border: 2px solid white;
+    transition: 0.5s;
+    font-weight: 800;
+    cursor: pointer;
 }
 .navbar__menu--list li:hover{
     box-sizing: border-box;  
-    /* border: 2px solid #c7d2e6; */
+    border: 2px solid #c7d2e6;
     background-color: #f5f8ff;
 }
 .navbar__user{
     margin-right: 80px;
     background-color: white;
+}
+.navbar__user--list{
+    cursor: pointer;
 }
 .navbar__user--list li{
     margin-left: 20px;
@@ -119,6 +136,7 @@ h1{
     border: 0px;
     background-color: #103c82;
     transition: 0.5s;
+    cursor: pointer;
 }
 .main__button--btn:hover{
     opacity: 0.7;
@@ -158,7 +176,7 @@ h1{
 }
 .search--setting{
     right: -2580px;
-    top: -60px;
+    top: -67px;
     font-size: 35px;
     z-index: 100;
     background-color: white;
@@ -166,11 +184,12 @@ h1{
 .search--nav{
     width: 2640px;
     height: 110px;
-    border: 4px solid #d9dbe4;
+    border: 2px solid #d9dbe4;
     display: block;
     border-radius: 15px;
-    color: #d9dbe4;
-    color: #000000;
+    /* color: #d9dbe4; */
+    /* color: #000000; */
+    color: #adafbb;
     background-color: white;
     padding-left: 105px;
     position: relative;
@@ -178,6 +197,9 @@ h1{
     box-sizing: border-box;
     margin: auto;
     font-size: 20px;
+}
+.search--nav::placeholder { 
+    color: #adafbb;
 }
 .users--selected{
     margin-top: 45px;
