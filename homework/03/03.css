@@ -399,6 +399,21 @@ h1{
 #people5:hover{
     background-color: #edf3ff !important;
 }
+#people1:hover #PP1Btn{    
+    border: 3px solid #103c82 !important;
+}
+#people2:hover #PP2Btn{    
+    border: 3px solid #103c82 !important;
+}
+#people3:hover #PP3Btn{    
+    border: 3px solid #103c82 !important;
+}
+#people4:hover #PP4Btn{    
+    border: 3px solid #103c82 !important;
+}
+#people5:hover #PP5Btn{    
+    border: 3px solid #103c82 !important;
+}
 .page__number{
     margin-top: 20px;
     width: 100%;
