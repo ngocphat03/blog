@@ -513,6 +513,7 @@ h1{
     margin-right: 40px;
     line-height: 30px;
     text-align: center;
+    border-radius: 10px;
 }
 .order__title--id--name{
     line-height: 80px;
@@ -595,6 +596,8 @@ h1{
     transform: translateY(-50%);
     margin-right: 40px;
     text-align: center;
+    transition: 0.5s;
+    border-radius: 10px;
 }
 .order__user--id--name{
     line-height: 150px;
@@ -708,8 +711,26 @@ h1{
     line-height: 60px;
     border-radius: 10px;
 }
+#order01, #order02, #order03, #order04, #order05, #orderButton01, #orderButton02, #orderButton03, #orderButton04, #orderButton05{
+    transition: 0.5s;
+}
 #order01:hover{
     background-color: #f5f7ff !important;
+}
+#order01:hover #odCheckBtn1{
+    border: 2px solid #103c82;
+}
+#order02:hover #odCheckBtn2{
+    border: 2px solid #103c82;
+}
+#order03:hover #odCheckBtn3{
+    border: 2px solid #103c82;
+}
+#order04:hover #odCheckBtn4{
+    border: 2px solid #103c82;
+}
+#order05:hover #odCheckBtn5{
+    border: 2px solid #103c82;
 }
 #order01:hover #orderButton01{
     display: block;
