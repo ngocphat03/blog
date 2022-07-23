@@ -7,6 +7,7 @@ var checkPP4 = 1;
 var checkPP5 = 1;
 function people1(){
     checkPP1 += 1;
+    var people2 = document.getElementById('people2')
     if(checkPP1 % 2 == 0){
         var people1 = document.getElementById('people1');
         numberUser += 1;
@@ -14,19 +15,31 @@ function people1(){
         people1.style.backgroundColor = "#edf3ff";
         var PP1Btn = document.getElementById('PP1Btn');
         PP1Btn.style.backgroundColor = "#103c82";
-    
+        if(checkPP2 % 2 != 0){
+            people1.style.borderRadius = " 10px 10px 10px 10px";
+        }
+        if(checkPP2 % 2 == 0){
+            people1.style.borderRadius = " 10px 10px 0px 0px";
+            people2.style.borderTopLeftRadius = " 0px";
+            people2.style.borderTopRightRadius = "0px ";
+        }
     }
     else{
         numberUser -= 1;
         var people1 = document.getElementById('people1');
         document.getElementById("allUser").innerHTML = numberUser + ' users selected';
         people1.style.backgroundColor = "#ffffff";
+        people1.style.borderRadius = " 0px 0px 0px 0px"
         var PP1Btn = document.getElementById('PP1Btn');
         PP1Btn.style.backgroundColor = "#ffffff";
+        people2.style.borderTopLeftRadius = " 10px";
+        people2.style.borderTopRightRadius = "10px ";
     }
 }
 function people2(){
     checkPP2 += 1;
+    var people1 = document.getElementById('people1');
+    var people3 = document.getElementById('people3');
     if(checkPP2 % 2 == 0){
         var people2 = document.getElementById('people2');
         numberUser += 1;
@@ -34,6 +47,25 @@ function people2(){
         people2.style.backgroundColor = "#edf3ff";
         var PP2Btn = document.getElementById('PP2Btn');
         PP2Btn.style.backgroundColor = "#103c82";
+        if(checkPP1 % 2 == 0){
+            people1.style.borderRadius = " 10px 10px 0px 0px";
+            people2.style.borderTopLeftRadius = " 0px";
+            people2.style.borderTopRightRadius = " 0px ";
+        }
+        if(checkPP1 % 2 != 0){
+            people2.style.borderTopLeftRadius = " 10px";
+            people2.style.borderTopRightRadius = " 10px ";
+        }
+        if(checkPP3 % 2 == 0){
+            people3.style.borderTopLeftRadius = " 0px";
+            people3.style.borderTopRightRadius = " 0px ";
+            people2.style.borderBottomLeftRadius = " 0px";
+            people2.style.borderBottomRightRadius = " 0px ";
+        }
+        if(checkPP3 % 2 != 0){
+            people2.style.borderBottomLeftRadius = "10px";
+            people2.style.borderBottomRightRadius = "10px";
+        }
     }
     else{
         numberUser -= 1;
@@ -42,10 +74,16 @@ function people2(){
         people2.style.backgroundColor = "#ffffff";
         var PP2Btn = document.getElementById('PP2Btn');
         PP2Btn.style.backgroundColor = "#ffffff";
+        people1.style.borderBottomLeftRadius = "10px";
+        people1.style.borderBottomRightRadius = "10px";
+        people3.style.borderTopLeftRadius = "10px";
+        people3.style.borderTopRightRadius = "10px";
     }
 }
 function people3(){
     checkPP3 += 1;
+        var people4 = document.getElementById('people4');
+        var people2 = document.getElementById('people2');
     if(checkPP3 % 2 == 0){
         var people3 = document.getElementById('people3');
         numberUser += 1;
@@ -53,6 +91,27 @@ function people3(){
         people3.style.backgroundColor = "#edf3ff";
         var PP3Btn = document.getElementById('PP3Btn');
         PP3Btn.style.backgroundColor = "#103c82";
+        if(checkPP2 % 2 == 0){
+            // people2.style.borderRadius = " 10px 10px 0px 0px";
+            people2.style.borderBottomLeftRadius = "0px";
+            people2.style.borderBottomRightRadius = "0px";
+            people3.style.borderTopLeftRadius = " 0px";
+            people3.style.borderTopRightRadius = " 0px ";
+        }
+        if(checkPP2 % 2 != 0){
+            people3.style.borderTopLeftRadius = " 10px";
+            people3.style.borderTopRightRadius = " 10px ";
+        }
+        if(checkPP4 % 2 == 0){
+            people3.style.borderBottomLeftRadius = "0px";
+            people3.style.borderBottomRightRadius = "0px";
+            people4.style.borderTopLeftRadius = " 0px";
+            people4.style.borderTopRightRadius = " 0px ";
+        }
+        if(checkPP4 % 2 != 0){
+            people3.style.borderBottomLeftRadius = "10px";
+            people3.style.borderBottomRightRadius = "10px";
+        }
     }
     else{
         numberUser -= 1;
@@ -61,10 +120,16 @@ function people3(){
         people3.style.backgroundColor = "#ffffff";
         var PP3Btn = document.getElementById('PP3Btn');
         PP3Btn.style.backgroundColor = "#ffffff";
+        people2.style.borderBottomLeftRadius = " 10px";
+        people2.style.borderBottomRightRadius = " 10px ";
+        people4.style.borderTopLeftRadius = " 10px";
+        people4.style.borderTopRightRadius = " 10px ";
     }
 }
 function people4(){
     checkPP4 += 1;
+    var people3 = document.getElementById('people3');
+    var people5 = document.getElementById('people5');
     if(checkPP4 % 2 == 0){
         var people4 = document.getElementById('people4');
         numberUser += 1;
@@ -72,6 +137,27 @@ function people4(){
         people4.style.backgroundColor = "#edf3ff";
         var PP4Btn = document.getElementById('PP4Btn');
         PP4Btn.style.backgroundColor = "#103c82";
+        if(checkPP3 % 2 == 0){
+            // people2.style.borderRadius = " 10px 10px 0px 0px";
+            people3.style.borderBottomLeftRadius = "0px";
+            people3.style.borderBottomRightRadius = "0px";
+            people4.style.borderTopLeftRadius = " 0px";
+            people4.style.borderTopRightRadius = " 0px ";
+        }
+        if(checkPP3 % 2 != 0){
+            people4.style.borderTopLeftRadius = " 10px";
+            people4.style.borderTopRightRadius = " 10px ";
+        }
+        if(checkPP5 % 2 == 0){
+            people4.style.borderBottomLeftRadius = "0px";
+            people4.style.borderBottomRightRadius = "0px";
+            people5.style.borderTopLeftRadius = " 0px";
+            people5.style.borderTopRightRadius = " 0px ";
+        }
+        if(checkPP5 % 2 != 0){
+            people4.style.borderBottomLeftRadius = "10px";
+            people4
+        }
     }
     else{
         numberUser -= 1;
@@ -80,10 +166,15 @@ function people4(){
         people4.style.backgroundColor = "#ffffff";
         var PP4Btn = document.getElementById('PP4Btn');
         PP4Btn.style.backgroundColor = "#ffffff";
+        people3.style.borderBottomLeftRadius = " 10px";
+        people3.style.borderBottomRightRadius = " 10px ";
+        people5.style.borderTopLeftRadius = " 10px";
+        people5.style.borderTopRightRadius = " 10px ";
     }
 }
 function people5(){
     checkPP5 += 1;
+    var people4 = document.getElementById('people4');
     if(checkPP5 % 2 == 0){
         var people5 = document.getElementById('people5');
         numberUser += 1;
@@ -91,6 +182,19 @@ function people5(){
         people5.style.backgroundColor = "#edf3ff";
         var PP5Btn = document.getElementById('PP5Btn');
         PP5Btn.style.backgroundColor = "#103c82";
+        people5.style.borderBottomLeftRadius = " 10px";
+        people5.style.borderBottomRightRadius = " 10px ";
+        if(checkPP4 % 2 == 0){
+            // people2.style.borderRadius = " 10px 10px 0px 0px";
+            people4.style.borderBottomLeftRadius = "0px";
+            people4.style.borderBottomRightRadius = "0px";
+            people5.style.borderTopLeftRadius = " 0px";
+            people5.style.borderTopRightRadius = " 0px ";
+        }
+        if(checkPP4 % 2 != 0){
+            people5.style.borderTopLeftRadius = " 10px";
+            people5.style.borderTopRightRadius = " 10px ";
+        }
     }
     else{
         numberUser -= 1;
@@ -99,6 +203,8 @@ function people5(){
         people5.style.backgroundColor = "#ffffff";
         var PP5Btn = document.getElementById('PP5Btn');
         PP5Btn.style.backgroundColor = "#ffffff";
+        people4.style.borderBottomLeftRadius = "10px";
+        people4.style.borderBottomRightRadius = "10px";
     }
 }
 function reset(){
