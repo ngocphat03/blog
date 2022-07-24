@@ -54,66 +54,69 @@
         <div class="menu">
             <div class="user">
                 <div class="user__user">
-                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-user logo-menu"></i>
                     <span>User</span>
                 </div>
                 <div class="user__create">
-                    <i class="fa-solid fa-user-plus"></i>
+                    <i class="fa-solid fa-user-plus logo-menu"></i>
                     <span>Create User</span>
                 </div>
                 <div class="user__roles">
-                    <i class="fa-solid fa-user-group"></i>
+                    <i class="fa-solid fa-user-group logo-menu"></i>
                     <span>Roles</span>
                 </div>
             </div>
-            <hr>
+            <hr class="hr--menu">
             <div class="list-management">
                 <div class="list__management--text">
                     <p>LIST MANAGEMENT</p>
                 </div>
                 <div class="list-management__service-catalog">
-                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-list logo-menu"></i>
                     <span class="span1">Service Catalog</span>
                 </div>
                 <div class="list-management__service-category list">
-                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-list logo-menu"></i>
                     <span class="span1">Service Category</span>
                 </div>
                 <div class="list-management__product-catalog list">
-                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-list logo-menu"></i>
                     <span class="span1">Product Catalog</span>
                 </div>
                 <div class="list-management__product-category list">
-                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-list logo-menu"></i>
                     <span class="span1">Product Category</span>
                 </div>
                 <div class="list-management__product-catalog list">
-                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-list logo-menu"></i>
                     <span class="span1">Product Catalog</span>
                 </div>
                 <div class="list-management__custom-fields list">
-                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-list logo-menu"></i>
                     <span class="span1">Custom Fields</span>
                 </div>
                 <div class="list-management__states">
-                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-list logo-menu"></i>
                     <span class="span1">States</span>
                 </div>
             </div>
-            <hr>
+            <hr class="hr--menu">
             <div class="more">
-                <div class="more__inventory">
-                    <i class="fa-solid fa-box"></i>
-                    <span class="span1">Inventory</span>
-                </div>
-                <div class="more__inventory-orders">
-                    <i class="fa-solid fa-file-lines"></i>
-                    <span class="span1">Inventory Order</span>
-                </div>
-                <div class="more__themes">
-                    <i class="fa-solid fa-tag"></i>
-                    <span class="span1">Themes</span>
-                </div>
+                <ul style="list-style: none;" class="more-list">
+                    <li class="more__inventory">
+                        <i class="fa-solid fa-box logo-menu"></i>
+                        <span class="span1">Inventory</span>
+                    </li>
+                    <li class="more__inventory-orders">
+                        <i class="fa-solid fa-file-lines logo-menu"></i>
+                        <span class="span1">Inventory Order</span>
+                    </li>
+                    <li class="more__themes">
+                        <i class="fa-solid fa-tag logo-menu"></i>
+                        <span class="span1">Themes</span>
+                    </li>
+                </ul>
+                
             </div>
         </div>
         <div class="main">
@@ -132,12 +135,13 @@
                     </div>
                 </div>
             </div>
+            <hr>
             <div class="main__page">
                 <div class="main__page--title">
                     <div class="main__page--title--text">
                         <h1>Inventory Order Info</h1>
                         </div>
-                    <div class="main__page--title--more main__title__right__more">
+                    <div id="inventory-order-information" class="main__page--title--more main__title__right__more" onclick="inventoryOrderInformation()">
                         <i class="fa-solid fa-ellipsis"></i>
                     </div>
                 </div>
@@ -147,28 +151,28 @@
                                 <p class="main__list--user--name2">VENDOR</p>
                                 <p class="main__list--user--name1"><b> Catpillar</b></p>
                         </span>
-                        <span class="main__page--advanced01--logo"><i class="fa-solid fa-house"></i></span>
+                        <span class="main__page--advanced01--logo logo2"><i class="fa-solid fa-house"></i></span>
                     </div>
                     <div class="main__page--advanced02">
                         <span class="main__page--advanced01--name">
                                 <p class="main__list--user--name2">DATE</p>
                                 <p class="main__list--user--name1"><b> 11/03/2017</b></p>
                         </span>
-                        <span class="main__page--advanced01--logo"><i class="fa-solid fa-calendar"></i></span>
+                        <span class="main__page--advanced01--logo logo2"><i class="fa-solid fa-calendar"></i></span>
                     </div>
                     <div class="main__page--advanced03">
                         <span class="main__page--advanced01--name">
                                 <p class="main__list--user--name2">PAID</p>
                                 <p class="main__list--user--name1"><b> Eric Hoffman</b></p>
                         </span>
-                        <span class="main__page--advanced01--logo"><i class="fa-regular fa-circle-user"></i></span>
+                        <span class="main__page--advanced01--logo logo2"><i class="fa-regular fa-circle-user"></i></span>
                     </div>
                     <div class="main__page--advanced04">
                         <span class="main__page--advanced01--name">
                                 <p class="main__list--user--name2">REFERENCE#/MEMO</p>
                                 <p class="main__list--user--name1"><b> JKU2439800001838</b></p>
                         </span>
-                        <span class="main__page--advanced01--logo"><i class="fa-solid fa-file-invoice-dollar"></i></span>
+                        <span class="main__page--advanced01--logo logo2"><i class="fa-solid fa-file-invoice-dollar"></i></span>
                     </div>
                 </div>
                 <div class="main__page--navbar">
@@ -406,34 +410,129 @@
                 <div class="screen-popup--title"><h1>Inventory Order Information</h1></div>
                 <div class="screen-popup-01">
                     <div class="screen-popup-1">
-                        <p class="popup-text11">VENDOR</p>
-                        <p class="popup-text12"></p>
+                        <div class="popup-text11">VENDOR</div>
+                        <div class="popup-text12">
+                            <p>Catpillar</p> 
+                        </div>
                     </div>
                     <div class="screen-popup-2">
                         <div class="popup-text21">DATE</div>
-                        <div class="popup-text22"></div>
+                        <div class="popup-text22">
+                            <p>11/03/2017</p>
+                        </div>
                     </div>
                     <div class="screen-popup-3">
-                        <div class="popup-text31">DATE</div>
-                        <div class="popup-text32"></div></div>
+                        <div class="popup-text31">PAID BY</div>
+                        <div class="popup-text32">
+                            <p>Eric Hoffman</p>
+                        </div>
+                    </div>
                     <div class="screen-popup-4">
-                        <div class="popup-text41">DATE</div>
-                        <div class="popup-text42"></div></div>
+                        <div class="popup-text41">REFERENCE#/MEMO</div>
+                        <div class="popup-text42">
+                            <p>JKU2439800001838</p>
+                        </div></div>
                 </div>
-
                 <div class="screen-popup-02">
                     <div class="screen-popup-1">
-                        <p class="popup-text11">VENDOR</p>
-                        <p class="popup-text12"></p>
-                        <p class="popup-text12 popup0201"></p>
+                        <div class="popup-text11">PRODUCT</div>
+                        <div class="popup-text12">
+                            <P>Compact Wheel Loaders</P>
+                        </div>
+                        <div class="popup-text12 popup0201">
+                            <p>SKU</p>
+                        </div>
                     </div>
                     <div class="screen-popup-2">
-                        <div class="popup-text21">DATE</div>
-                        <div class="popup-text22"></div>
+                        <div class="popup-text21">COST</div>
+                        <div class="popup-text22">
+                            <p><b> $180.00</b></p>
+                        </div>
                     </div>
                     <div class="screen-popup-3">
-                        <div class="popup-text21">DATE</div>
-                        <div class="popup-text32"></div>
+                        <div class="popup-text21">STOCK</div>
+                        <div class="popup-text323">
+                            <p>39</p>
+                        </div>
+                        <div class="bf-popup-text323">
+                            <p>Master</p>
+                            <div class="logo-plus"></div>
+                        </div>
+                        <div class="popup-text323 popup0302">
+                            <p>Quantity</p>
+                        </div>
+                        <div class="bf-popup-text323 popup0302">
+                            <p>Seclect Warehouse</p>
+                        </div>
+                    </div>
+                    <div class="screen-right">
+                        <h1><b>$7,020.00</b></h1>
+                    </div>
+                </div>
+                <div class="screen-popup-02">
+                    <div class="screen-popup-1">
+                        <div class="popup-text11">PRODUCT</div>
+                        <div class="popup-text12">
+                            <P>Compact Wheel Loaders</P>
+                        </div>
+                        <div class="popup-text12 popup0201">
+                            <p>SKU</p>
+                        </div>
+                    </div>
+                    <div class="screen-popup-2">
+                        <div class="popup-text21">COST</div>
+                        <div class="popup-text22">
+                            <p><b> $60.00</b></p>
+                        </div>
+                    </div>
+                    <div class="screen-popup-3">
+                        <div class="popup-text21">STOCK</div>
+                        <div class="popup-text323">
+                            <p>10</p>
+                        </div>
+                        <div class="bf-popup-text323">
+                            <p>Master</p>
+                            <div class="logo-plus"></div>
+                        </div>
+                    </div>
+                    <div class="screen-right">
+                        <h1><b>$600.00</b></h1>
+                    </div>
+                </div>
+                <div class="popup__end">
+                    <div class="popup__end--end">
+                        <div class="main__page--end-btn">
+                            <span>+ Add new product</span>
+                        </div>
+                    </div>
+                    <div class="main__page--end1" style="width: 565px;">
+                        <p class="text-end1pu">DISCOUNY RECEIVED (-):</p>
+                        <p class="text-end1pu">SALES TAX PAID:</p>
+                        <p class="text-end1pu">SHIPPING PAID:</p>
+                        <p class="text-end1pu text-end1-big">GRAND TOTAL</p>
+                    </div>
+                    <div class="popup__end--end2">
+                        <div class="text-end2pu text-right"><p>$350.00</p></div>
+                        <div class="text-end2pu text-right">$733.50</div>
+                        <div class="text-end2pu text-right">$123.50</div>
+                        <div class="text-end2 text-end2-big text-center"><b>$7,818.00</b></div>   
+                    </div>
+                </div>
+                <div style="width: 1580px; height: 175px; float: left;"></div>
+                <hr>
+                <div class="popup__button">
+                    <div class="popup__button--left">
+                        <div class="popup__button--left--icon">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                    </div>
+                    <div class="popup__button--right">
+                        <div class="popup__button--right--cancel" onclick="close()">
+                            <p>CANCEL</p> 
+                        </div>
+                        <div class="popup__button--right--save" onclick="close()">
+                            <p> SAVE</p>
+                        </div>
                     </div>
                 </div>
             </div>
