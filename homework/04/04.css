@@ -659,6 +659,7 @@ hr {
     height: 50px;
     border: 2px solid #999a9c;
     line-height: 50px;
+    border-radius: 10px;
 }
 .popup-text12 p{
     position: relative;
@@ -678,6 +679,7 @@ hr {
     width: 100%;
     height: 50px;
     border: 2px solid #999a9c;
+    border-radius: 10px;
     line-height: 50px;
 }
 .popup-text22 p{
@@ -694,6 +696,7 @@ hr {
     width: 100%;
     height: 50px;
     border: 2px solid #999a9c;
+    border-radius: 10px;
 }
 .screen-popup-4{
     width: 360px;
@@ -705,6 +708,7 @@ hr {
     width: 100%;
     height: 50px;
     border: 2px solid #999a9c;
+    border-radius: 10px;
     line-height: 50px;
 }.popup-text42 p{
     position: relative;
@@ -717,6 +721,7 @@ hr {
     width: 360px;
     height: 50px;
     border: 2px solid #999a9c;
+    border-radius: 10px;
     line-height: 50px;
 }
 .popup-text32 p{
@@ -727,6 +732,8 @@ hr {
     width: 140px;
     height: 50px;
     border: 2px solid #999a9c;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     float: left;
     line-height: 50px;
 }
@@ -738,6 +745,7 @@ hr {
     width: 440px;
     height: 50px;
     border: 2px solid #999a9c;
+    border-radius: 10px;
     line-height: 50px;
 }
 .bf-popup-text323 p{
